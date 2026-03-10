@@ -451,6 +451,42 @@ a {
   animation: heroFadeIn 0.8s 0.9s ease forwards;
 }
 
+/* ═══════════════════════════════════
+   HERO WITH VSL ENABLED
+   ═══════════════════════════════════ */
+.hero.has-vsl {
+  padding-top: 120px;
+  padding-bottom: 80px;
+  height: auto;
+}
+
+.hero.has-vsl .hero-content {
+  margin-top: 32px;
+}
+
+.hero.has-vsl .hero-headline {
+  font-size: clamp(2.8rem, 6vw, 5rem);
+  margin-bottom: 16px;
+}
+
+.hero.has-vsl .hero-badge {
+  margin-bottom: 16px;
+}
+
+.hero.has-vsl .hero-subline {
+  margin-bottom: 24px;
+  font-size: 0.95rem;
+}
+
+.hero.has-vsl .hero-vsl {
+  max-width: 680px;
+  margin-bottom: 28px;
+}
+
+.hero.has-vsl .btn-hero {
+  padding: 14px 40px;
+}
+
 .hero-vsl iframe {
   width: 100%;
   height: 100%;

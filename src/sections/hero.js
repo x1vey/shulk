@@ -5,7 +5,7 @@ export function renderHero(container) {
   const hero = data.hero;
 
   const section = document.createElement('section');
-  section.className = 'hero';
+  section.className = `hero ${hero.vslEnabled ? 'has-vsl' : ''}`;
   section.id = 'home';
 
   // VSL goes between subline and CTA
