@@ -60,7 +60,7 @@ function renderDashboard(container) {
     <div class="admin-topbar">
       <h1>SHULK <span>ADMIN</span></h1>
       <div class="admin-topbar-actions">
-        <a href="#/" class="btn btn-ghost">← View Site</a>
+        <a href="/" class="btn btn-ghost">← View Site</a>
         <button class="btn btn-ghost" id="adminReset">Reset All</button>
         <button class="btn btn-primary" id="adminSave">Save Changes</button>
       </div>
