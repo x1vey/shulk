@@ -3,7 +3,7 @@ import { getSiteData, saveSiteData, resetSiteData, applyColors } from '../dataMa
 
 export function renderAdminPanel(container) {
   // Check if already authenticated
-  const isAuth = sessionStorage.getItem('shulk_admin_auth') === 'true';
+  const isAuth = sessionStorage.getItem('fitness_admin_auth') === 'true';
   if (isAuth) {
     renderDashboard(container);
   } else {
@@ -31,7 +31,7 @@ function renderPasswordGate(container) {
 
   const tryLogin = () => {
     if (input.value === ADMIN_PASSWORD) {
-      sessionStorage.setItem('shulk_admin_auth', 'true');
+      sessionStorage.setItem('fitness_admin_auth', 'true');
       container.innerHTML = '';
       renderDashboard(container);
     } else {
@@ -58,7 +58,7 @@ function renderDashboard(container) {
 
   dashboard.innerHTML = `
     <div class="admin-topbar">
-      <h1>SHULK <span>ADMIN</span></h1>
+      <h1>SITE <span>ADMIN</span></h1>
       <div class="admin-topbar-actions">
         <a href="/" class="btn btn-ghost">← View Site</a>
         <button class="btn btn-ghost" id="adminReset">Reset All</button>

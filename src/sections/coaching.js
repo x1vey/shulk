@@ -29,7 +29,20 @@ export function renderCoaching(container) {
           <a href="${coaching.ctaLink}" class="btn btn-primary" target="_blank" rel="noopener">${coaching.ctaText}</a>
         </div>
         <div class="coaching-image-wrapper">
-          <img src="${coaching.imageUrl}" alt="1:1 Coaching" class="coaching-image">
+          ${coaching.backgroundVideo ? `
+            <video 
+              src="${coaching.backgroundVideo}" 
+              class="coaching-video" 
+              autoplay 
+              muted 
+              loop 
+              playsinline
+              preload="auto"
+              style="width: 100%; height: 100%; object-fit: cover; border-radius: var(--radius-lg); filter: grayscale(50%) contrast(1.2);"
+            ></video>
+          ` : `
+            <img src="${coaching.imageUrl}" alt="1:1 Coaching" class="coaching-image">
+          `}
           <div class="coaching-image-accent"></div>
         </div>
       </div>

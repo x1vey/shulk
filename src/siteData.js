@@ -1,143 +1,126 @@
 // Default site data — all editable content lives here
 export const DEFAULT_SITE_DATA = {
   colors: {
-    primary: "#000000",
-    accent: "#E63946",
-    text: "#FFFFFF",
-    cardBg: "rgba(255,255,255,0.04)",
-    cardBorder: "rgba(255,255,255,0.08)"
+    primary: "#0a0a0a",
+    accent: "#ffffff",
+    text: "#f0f0f0",
+    cardBg: "rgba(255, 255, 255, 0.04)",
+    cardBorder: "rgba(255, 255, 255, 0.1)"
   },
 
   navbar: {
-    logoText: "SHULK",
+    logoText: "XIVEY",
     links: [
-      { label: "Home", href: "#home" },
-      { label: "Programs", href: "#programs" },
-      { label: "Results", href: "#transformations" },
-      { label: "Pricing", href: "#pricing" }
+      { label: "About", href: "#about" },
+      { label: "Framework", href: "#framework" },
+      { label: "Coaching", href: "#coaching" },
+      { label: "Results", href: "#results" },
+      { label: "Testimonials", href: "#testimonials" }
     ],
-    ctaText: "JOIN NOW",
-    ctaLink: "#pricing"
+    ctaText: "APPLY NOW",
+    ctaLink: "#coaching-application"
   },
 
   hero: {
-    headline: "ELEVATE YOUR PHYSIQUE",
-    subline: "Elite coaching built on years of experience at the highest level. Science-backed, results-driven training that transforms your body and mind.",
-    badgeText: "ELITE COACHING",
+    headline: "The 12-Week Body Rebuild System",
+    subline: "Xivey is my name, I built this website for you ignore some of the texts we will definitely need to put in copy tailored for you.",
+    badgeText: "ELITE COACHING — LIMITED SPOTS",
     backgroundImage: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1920&q=80",
-    ctaText: "START YOUR JOURNEY",
-    ctaLink: "https://example.com/join",
-    vslUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    backgroundVideo: "",
+    ctaText: "APPLY NOW — IF YOU'RE READY",
+    ctaLink: "#coaching-application",
+    vslUrl: "",
     vslEnabled: false
   },
 
   ticker: {
-    text: "SET THE STANDARD"
+    text: "The 12-Week Body Rebuild System"
   },
 
   transformations: {
-    headline: "YOUR JOURNEY, YOUR TRANSFORMATION",
-    subline: "See the results that speak for themselves",
+    headline: "PROOF OF WAR",
+    subline: "These men showed up. They did the work. They earned every result. No filters, no fluff.",
+    backgroundVideo: "https://cdn.pixabay.com/video/2020/12/12/58985-490319213_large.mp4",
     items: [
       {
-        imageUrl: "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=400&h=500&fit=crop",
-        title: "12 Week Transformation",
-        description: "From 220lbs to 185lbs. Consistency and discipline made the difference."
-      },
-      {
         imageUrl: "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=400&h=500&fit=crop",
-        title: "Competition Ready",
-        description: "16 weeks of dedicated prep. First place in classic physique."
+        title: "16-Week Total Domination",
+        description: "Burnt out to elite condition. Trained around a 60-hour work week and still showed up every single day."
       },
       {
-        imageUrl: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=400&h=500&fit=crop",
-        title: "Lifestyle Change",
-        description: "Started at zero. 6 months later, a completely different person."
+        imageUrl: "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=400&h=500&fit=crop",
+        title: "Competitive Physique Destruction",
+        description: "Gained 4kg of lean muscle while shredding 5% body fat. Precision. Discipline. Execution."
+      },
+      {
+        imageUrl: "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=400&h=500&fit=crop",
+        title: "Executive Overhaul",
+        description: "12kg gone. Energy through the roof. Mindset completely rebuilt from the ground up."
       },
       {
         imageUrl: "https://images.unsplash.com/photo-1605296867424-35fc25c9212a?w=400&h=500&fit=crop",
-        title: "Strength Gains",
-        description: "Bench went from 135 to 315. Program works if you work."
+        title: "Post-Injury Comeback",
+        description: "Worked around every limitation and set new PRs anyway. Strength is the only rehabilitation."
       },
       {
         imageUrl: "https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=400&h=500&fit=crop",
-        title: "Body Recomp",
-        description: "Same weight, completely different composition."
+        title: "The Workhorse Standard",
+        description: "6 months of zero excuses. Zero missed sessions. The result? A completely different man."
       }
     ]
   },
 
   testimonials: {
-    headline: "HEAR FROM OUR ATHLETES",
-    subline: "Real experiences from people who turned goals into results.",
+    headline: "THEY COMMITTED. THEY CONQUERED.",
+    subline: "These aren't motivational quotes. These are results from men who stopped making excuses and started doing the work.",
     items: [
       {
-        quote: "This program completely changed my approach to training. The structure and progressive overload principles are unmatched. Down 25lbs and stronger than ever.",
-        author: "@ironmike_fit"
+        quote: "Xivey Coach doesn't coddle you. He tells you exactly what's wrong and exactly how to fix it. That's what I needed. I've never been stronger or more focused in my life.",
+        author: "Mark R. — Professional Athlete"
       },
       {
-        quote: "Mental health is a real struggle for me. The gym is my outlet. This coaching has taught me so much — both mentally and physically. Don't give up on yourself.",
-        author: "@resilient_warrior"
+        quote: "The accountability is brutal — in the best way. Weekly check-ins keep you honest. You can't hide from the data. Best decision I've ever made.",
+        author: "Simon D. — Executive"
       },
       {
-        quote: "Finished my first 12-week program and the results are insane. The nutrition guidance alone is worth every penny. Can't wait to start the next phase.",
-        author: "@gains_by_grace"
+        quote: "I thought I trained hard. XIVEY showed me I was playing games. Real intensity, real structure, real results. Nothing else comes close.",
+        author: "Jake L. — Online Coaching Client"
       },
       {
-        quote: "I've tried everything. This is the first program that actually made me look forward to training every single day. The coaching quality is elite.",
-        author: "@beast_mode_brad"
+        quote: "No fluff, no filler. Just a system that works and a coach who won't let you quit on yourself.",
+        author: "Chris T. — FIFO Worker"
       },
       {
-        quote: "From someone who never stepped foot in a gym to competing in my first show. This community and coaching made it happen.",
-        author: "@stageready_sam"
+        quote: "From day one the standard was set high. I either met it or I didn't. I met it every time. I feel unstoppable.",
+        author: "Liam S. — Transformation Graduate"
       }
     ]
   },
 
   programs: {
-    headline: "PROGRAMS FOR ANY GOAL",
-    subline: "Targeted workout programs for all levels — each one carefully structured to eliminate plateaus and guide you to consistent gains.",
+    headline: "CHOOSE YOUR WEAPON",
+    subline: "Pick the level of commitment you're ready for. There is no easy option here.",
+    backgroundVideo: "https://cdn.pixabay.com/video/2020/05/18/39378-422737326_large.mp4",
     items: [
       {
-        title: "HYPERTROPHY BLUEPRINT",
-        description: "A science-based muscle building program designed for maximum growth.",
-        duration: "12 weeks",
-        imageUrl: "https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?w=400&h=300&fit=crop",
-        tag: "POPULAR"
+        title: "1-ON-1 ELITE DOMINATION",
+        description: "The full arsenal. Custom training, precision nutrition, weekly video check-ins, and direct WhatsApp access. This is war, and you won't fight it alone.",
+        duration: "Min 16 Weeks",
+        imageUrl: "https://images.unsplash.com/photo-1549060279-7e168fcee0c2?w=400&h=300&fit=crop",
+        tag: "MOST POPULAR"
       },
       {
-        title: "SHRED PROTOCOL",
-        description: "Strategic cutting program to preserve muscle while dropping body fat.",
-        duration: "8 weeks",
+        title: "LIFESTYLE PHYSIQUE FORGE",
+        description: "Build a body you're proud of without sacrificing your life. For the man who balances career, family, and the relentless pursuit of excellence.",
+        duration: "Ongoing",
         imageUrl: "https://images.unsplash.com/photo-1550345332-09e3ac987658?w=400&h=300&fit=crop",
         tag: ""
       },
       {
-        title: "POWERBUILDING",
-        description: "Hybrid strength & hypertrophy for athletes who want it all.",
-        duration: "16 weeks",
+        title: "MINDSET & PERFORMANCE PROTOCOL",
+        description: "Optimize everything. Sleep, recovery, stress, and high-performance training. Because your mind is the most powerful muscle you own.",
+        duration: "12 Weeks",
         imageUrl: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=400&h=300&fit=crop",
-        tag: ""
-      },
-      {
-        title: "PUSH PULL LEGS",
-        description: "Classic 3-phase PPL split with progressive overload built in.",
-        duration: "6 weeks",
-        imageUrl: "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=400&h=300&fit=crop",
-        tag: ""
-      },
-      {
-        title: "COMPETITION PREP",
-        description: "Contest-stage ready. Peak week protocols included.",
-        duration: "20 weeks",
-        imageUrl: "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=400&h=300&fit=crop",
-        tag: "ELITE"
-      },
-      {
-        title: "BEGINNER FUNDAMENTALS",
-        description: "Build the foundation. Learn proper form and progressive training.",
-        duration: "8 weeks",
-        imageUrl: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=400&h=300&fit=crop",
         tag: ""
       }
     ]
@@ -146,77 +129,79 @@ export const DEFAULT_SITE_DATA = {
   features: {
     items: [
       {
-        title: "EXPERT VIDEO GUIDANCE",
-        description: "Know exactly what to do every day — eliminate wasted effort with high-definition video guidance, detailed target areas, exercise modifications, and cues to maximize every rep.",
-        imageUrl: "https://images.unsplash.com/photo-1549060279-7e168fcee0c2?w=600&h=400&fit=crop"
+        title: "KNOWLEDGE IS AMMUNITION",
+        description: "XIVEY doesn't just hand you a plan. You learn the principles behind every set, rep, and meal so you're never dependent on anyone again. You become your own weapon.",
+        imageUrl: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=600&h=400&fit=crop"
       },
       {
-        title: "TRACK YOUR NUTRITION",
-        description: "Dial in your nutrition tracking with our comprehensive database. Log meals, track macros, and stay on top of your diet with precision tools built for serious athletes.",
-        imageUrl: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=600&h=400&fit=crop"
-      },
-      {
-        title: "COMMUNITY & ACCOUNTABILITY",
-        description: "Join a community of like-minded individuals committed to higher standards. Share achievements, get support, and stay accountable with real-time motivation.",
+        title: "ACCOUNTABILITY WITH TEETH",
+        description: "Weekly video check-ins and direct WhatsApp access mean there is nowhere to hide. We adjust in real time. Excuses die here.",
         imageUrl: "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?w=600&h=400&fit=crop"
+      },
+      {
+        title: "BUILT FOR THE ELITE LIFE",
+        description: "Your training amplifies your life — it doesn't consume it. We build a system that makes you dangerous in the gym and dominant in everything else.",
+        imageUrl: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=600&h=400&fit=crop"
       }
     ]
   },
 
   coaching: {
-    label: "PREMIUM",
-    headline: "1-ON-1 COACHING",
-    description: "Get a fully personalized training and nutrition program built specifically for your body, your goals, and your lifestyle. Direct access to an elite-level coach who's been in the trenches.",
-    imageUrl: "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=800&h=1000&fit=crop",
-    ctaText: "APPLY NOW",
-    ctaLink: "https://example.com/coaching",
+    label: "ELITE",
+    headline: "1-ON-1 ONLINE COACHING",
+    description: "This is for the man who is done playing small. No shortcuts. No half-measures. You get Xivey Coach's full expertise, a completely bespoke system, and the relentless accountability it takes to reach the top 1%. Are you ready?",
+    imageUrl: "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=800&h=1000&fit=crop",
+    backgroundVideo: "https://cdn.pixabay.com/video/2023/01/27/148201-793717934_large.mp4",
+    ctaText: "APPLY FOR XIVEY COACHING",
+    ctaLink: "https://zypflg82w7t.typeform.com/to/hemaRzul",
     benefits: [
       {
-        icon: "⚡",
-        title: "PERSONALIZED PLANS",
-        description: "Custom training splits and periodization tailored to your body and goals."
+        icon: "",
+        title: "ELITE PROGRAMMING",
+        description: "Scientific training phases engineered to maximize muscle, performance, and dominance."
       },
       {
-        icon: "📊",
-        title: "WEEKLY CHECK-INS",
-        description: "Consistent accountability with detailed progress reviews every week."
+        icon: "",
+        title: "DATA-DRIVEN CHECK-INS",
+        description: "We track what matters. Biomechanics, nutrition adherence, mindset markers. No guessing."
       },
       {
-        icon: "🥗",
-        title: "NUTRITION GUIDANCE",
-        description: "Macro-optimized meal plans that fit your lifestyle and preferences."
+        icon: "",
+        title: "PERFORMANCE NUTRITION",
+        description: "Flexible dieting built around your life. Sustainable results without restriction or excuses."
       },
       {
-        icon: "💬",
+        icon: "",
         title: "DIRECT ACCESS",
-        description: "Message your coach anytime. No bots, no delays — real support."
+        description: "Straight line to Xivey Coach. Form checks, questions, or a hard truth when you need it most."
       }
     ]
   },
 
   pricing: {
-    headline: "UPGRADE YOUR TRAINING",
-    subline: "Join thousands of athletes who've transformed their physiques using our proven coaching system.",
+    headline: "INVEST IN YOUR DOMINANCE",
+    subline: "XIVEY works with a limited number of clients. If you want a spot, you earn it.",
+    backgroundVideo: "https://cdn.pixabay.com/video/2020/12/12/58984-490319219_large.mp4",
     plans: [
       {
-        name: "Annual Plan",
-        price: "$199.99",
-        period: "/year",
-        perMonth: "$16.66/month",
-        features: ["All Programs", "Nutrition Tracking", "Video Library", "Community Access", "Priority Support"],
-        ctaText: "UNLOCK ACCESS",
-        ctaLink: "https://example.com/annual",
+        name: "Monthly Coaching",
+        price: "€200",
+        period: "/month",
+        perMonth: "Rolling monthly agreement",
+        features: ["Bespoke Training Plan", "Custom Nutrition Protocols", "Weekly Video Check-ins", "Full WhatsApp Support", "Educational Resource Access", "Technique Analysis"],
+        ctaText: "SECURE YOUR SPOT",
+        ctaLink: "https://zypflg82w7t.typeform.com/to/hemaRzul",
         highlighted: true,
-        badge: "BEST VALUE"
+        badge: "LIMITED SPACES"
       },
       {
-        name: "Monthly Plan",
-        price: "$29.99",
-        period: "/month",
-        perMonth: "",
-        features: ["All Programs", "Nutrition Tracking", "Video Library", "Community Access"],
-        ctaText: "GET STARTED",
-        ctaLink: "https://example.com/monthly",
+        name: "Discovery Call",
+        price: "FREE",
+        period: "",
+        perMonth: "30-minute no-BS consultation",
+        features: ["Goal Assessment", "Strategy Overview", "Process Explanation", "Fitness Level Audit", "Mindset Discussion"],
+        ctaText: "BOOK YOUR CALL",
+        ctaLink: "https://link.systemisedtoscale.com/widget/bookings/30mins-consultcall-dairecrossan",
         highlighted: false,
         badge: ""
       }
@@ -224,25 +209,98 @@ export const DEFAULT_SITE_DATA = {
   },
 
   footer: {
-    tagline: "SET THE STANDARD",
-    description: "The world has enough distractions. It's time to refocus. It's time to reclaim discipline.",
-    ctaText: "START YOUR JOURNEY",
-    ctaLink: "https://example.com/join",
+    tagline: "NO EXCUSES. NO WEAKNESS. ONLY WAR.",
+    description: "XIVEY exists for men who refuse to settle. Your potential is untapped. Your time is now. Stop waiting.",
+    ctaText: "APPLY FOR COACHING",
+    ctaLink: "#coaching-application",
     links: [
-      { label: "Home", href: "#home" },
-      { label: "Programs", href: "#programs" },
-      { label: "Pricing", href: "#pricing" },
-      { label: "Support", href: "mailto:support@shulkfit.com" }
+      { label: "About", href: "#about" },
+      { label: "Framework", href: "#framework" },
+      { label: "Coaching", href: "#coaching-application" },
+      { label: "Results", href: "#results" },
+      { label: "Testimonials", href: "#testimonials" }
     ],
     socialLinks: {
-      instagram: "https://instagram.com/shulkfit",
-      youtube: "https://youtube.com/@shulkfit",
-      tiktok: "https://tiktok.com/@shulkfit"
+      instagram: "https://www.instagram.com/yourcoaching/",
+      youtube: "https://youtube.com/@yourcoaching",
+      whatsapp: "https://api.whatsapp.com/send/?phone=YOUR_NUMBER"
     },
-    copyright: "© 2026 SHULK FITNESS. All rights reserved.",
+    copyright: "© 2026 XIVEY. All rights reserved.",
     legalLinks: [
       { label: "Terms of Service", href: "#" },
       { label: "Privacy Policy", href: "#" }
+    ]
+  },
+
+  about: {
+    headline: "THE XIVEY MISSION",
+    subline: "We exist to turn average men into elite performers. Physically. Mentally. Completely.",
+    backgroundVideo: "https://cdn.pixabay.com/video/2023/01/27/148208-793717949_large.mp4",
+    story: "My name is Xivey Coach, and I built XIVEY because the fitness industry is full of noise, mediocrity, and people who want your money without delivering results. I spent years engineering a system that produces elite physical transformations for men who operate at a high level. We don't chase aesthetics for vanity. We chase performance, discipline, and the version of you that most people never unlock.",
+    mission: {
+      headline: "UNLEASH ELITE POTENTIAL",
+      description: "To arm men with the knowledge, structure, and accountability to become the most dangerous version of themselves. We operate on three pillars: Education, Discipline, and Relentless Execution. Stagnation is the enemy. We choose war."
+    },
+    values: [
+      {
+        icon: "",
+        title: "ZERO TOLERANCE FOR AVERAGE",
+        description: "Good enough is not good enough. We operate at the highest standard in every rep, every meal, every check-in."
+      },
+      {
+        icon: "",
+        title: "SCIENCE IS THE WEAPON",
+        description: "Every recommendation is backed by exercise physiology and nutritional science. No guesswork. No bro-science."
+      },
+      {
+        icon: "",
+        title: "BRUTAL HONESTY",
+        description: "The truth is the only thing that moves the needle. We tell you exactly what's holding you back and exactly how to fix it."
+      },
+      {
+        icon: "",
+        title: "IRON MINDSET",
+        description: "Your body follows your mind. We forge mental resilience through disciplined, consistent, unrelenting action."
+      }
+    ],
+    credentials: [
+      "Online Transformation Specialist",
+      "Lifestyle Physique Performance Coach",
+      "Certified Nutritionist (MNU/L1/L2)",
+      "Hundreds of Documented Client Results",
+      "Mindset & Accountability Mentor"
+    ]
+  },
+
+  contact: {
+    headline: "READY TO COMMIT?",
+    subline: "No time-wasters. No tyre-kickers. If you're serious about your transformation, reach out and let's see if you're a fit for the XIVEY process.",
+    backgroundVideo: "https://cdn.pixabay.com/video/2020/05/18/39374-422737298_large.mp4",
+    email: "coaching@xivey.com",
+    phone: "+353 86 669 2576",
+    address: "Online Coaching Worldwide",
+    hours: "Monday – Friday: 9:00 AM – 6:00 PM\nSaturday: Check-in Day\nSunday: Off",
+    faq: [
+      {
+        question: "Is this only for experienced lifters?",
+        answer: "No. Whether you're a beginner who needs a foundation or a seasoned athlete chasing that extra 1%, the XIVEY system is built around where you are right now. The standard is high regardless."
+      },
+      {
+        question: "How does online coaching work?",
+        answer: "You get a dedicated app for training and nutrition. You log your workouts, track your food, and we do a deep-dive video check-in every week to review data and set targets. No hiding from the numbers."
+      },
+      {
+        question: "What is the minimum commitment?",
+        answer: "16 weeks minimum for transformation coaching. Real change takes time. If you're looking for a quick fix, XIVEY is not for you."
+      },
+      {
+        question: "Do you provide meal plans?",
+        answer: "Macro-based targets and meal templates. The goal is to teach you how to eat for performance — not chain you to a chicken-and-broccoli list forever."
+      },
+      {
+        question: "How much access do I get?",
+        answer: "Unlimited WhatsApp support. Form checks, nutrition questions, mindset blocks — Xivey Coach is there. You are never on your own in this process."
+      }
     ]
   }
 };

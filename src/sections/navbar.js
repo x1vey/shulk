@@ -8,13 +8,13 @@ export function renderNavbar(container) {
   navbar.className = 'navbar';
   navbar.id = 'navbar';
 
-  const linksHtml = nav.links.map(l =>
-    `<li><a href="${l.href}">${l.label}</a></li>`
-  ).join('');
+  const linksHtml = nav.links.map(l => {
+    return `<li><a href="${l.href}">${l.label}</a></li>`;
+  }).join('');
 
   navbar.innerHTML = `
     <div class="container">
-      <a href="#home" class="navbar-logo">${nav.logoText.slice(0, 1)}<span>${nav.logoText.slice(1)}</span></a>
+      <a href="#home" class="navbar-logo">${nav.logoText}</a>
       <ul class="navbar-links" id="navLinks">
         ${linksHtml}
         <li><a href="${nav.ctaLink}" class="btn btn-primary navbar-cta">${nav.ctaText}</a></li>

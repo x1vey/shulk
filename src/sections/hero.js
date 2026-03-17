@@ -22,7 +22,20 @@ export function renderHero(container) {
 
   section.innerHTML = `
     <div class="hero-bg">
-      <img src="${hero.backgroundImage || 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1920&q=80'}" alt="" class="hero-bg-img" draggable="false">
+      ${hero.backgroundVideo ? `
+        <video 
+          src="${hero.backgroundVideo}" 
+          class="hero-bg-video" 
+          autoplay 
+          muted 
+          loop 
+          playsinline
+          preload="auto"
+          draggable="false"
+        ></video>
+      ` : `
+        <img src="${hero.backgroundImage || 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1920&q=80'}" alt="" class="hero-bg-img" draggable="false">
+      `}
       <div class="hero-overlay"></div>
       <div class="hero-vignette"></div>
     </div>
@@ -31,7 +44,7 @@ export function renderHero(container) {
       <h1 class="hero-headline">${hero.headline}</h1>
       <p class="hero-subline">${hero.subline}</p>
       ${vslHtml}
-      <a href="${hero.ctaLink}" class="btn btn-hero" target="_blank" rel="noopener">${hero.ctaText}</a>
+      <a href="${hero.ctaLink}" class="btn btn-hero"><span>${hero.ctaText}</span></a>
     </div>
     <div class="hero-scroll-indicator">
       <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12l7 7 7-7"/></svg>

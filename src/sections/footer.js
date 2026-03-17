@@ -22,7 +22,7 @@ export function renderFooter(container) {
           <div class="footer-brand">
             <h2>${f.tagline}</h2>
             <p>${f.description}</p>
-            <a href="${f.ctaLink}" class="btn btn-primary" target="_blank" rel="noopener">${f.ctaText}</a>
+            <a href="${f.ctaLink}" class="btn btn-primary">${f.ctaText}</a>
           </div>
           <div class="footer-col">
             <h4>Navigation</h4>
@@ -31,9 +31,9 @@ export function renderFooter(container) {
           <div class="footer-col">
             <h4>Connect</h4>
             <div class="footer-social">
-              ${f.socialLinks.instagram ? `<a href="${f.socialLinks.instagram}" target="_blank" rel="noopener" aria-label="Instagram">📷</a>` : ''}
-              ${f.socialLinks.youtube ? `<a href="${f.socialLinks.youtube}" target="_blank" rel="noopener" aria-label="YouTube">▶</a>` : ''}
-              ${f.socialLinks.tiktok ? `<a href="${f.socialLinks.tiktok}" target="_blank" rel="noopener" aria-label="TikTok">🎵</a>` : ''}
+              ${f.socialLinks.instagram ? `<a href="${f.socialLinks.instagram}" target="_blank" rel="noopener" aria-label="Instagram">IG</a>` : ''}
+              ${f.socialLinks.youtube ? `<a href="${f.socialLinks.youtube}" target="_blank" rel="noopener" aria-label="YouTube">YT</a>` : ''}
+              ${f.socialLinks.whatsapp ? `<a href="${f.socialLinks.whatsapp}" target="_blank" rel="noopener" aria-label="WhatsApp">WA</a>` : ''}
             </div>
           </div>
         </div>

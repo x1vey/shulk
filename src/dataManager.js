@@ -1,6 +1,6 @@
 import { DEFAULT_SITE_DATA } from './siteData.js';
 
-const STORAGE_KEY = 'shulk_site_data';
+const STORAGE_KEY = 'fitness_site_data';
 
 function deepMerge(target, source) {
   const output = { ...target };
@@ -22,15 +22,6 @@ function deepMerge(target, source) {
 }
 
 export function getSiteData() {
-  try {
-    const stored = localStorage.getItem(STORAGE_KEY);
-    if (stored) {
-      const parsed = JSON.parse(stored);
-      return deepMerge(DEFAULT_SITE_DATA, parsed);
-    }
-  } catch (e) {
-    console.warn('Error reading site data from storage:', e);
-  }
   return { ...DEFAULT_SITE_DATA };
 }
 
